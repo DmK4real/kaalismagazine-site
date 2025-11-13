@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaalis Mag </title>
+  <meta name="description"
+    content="Kaalis Magazine est un média digital ivoirien dédié à la culture, au style et aux créateurs africains. Découvrez nos rubriques Opinion, Portrait, Lieux, Style et Communauté.">
+  <meta name="keywords"
+    content="Kaalis, Magazine, Côte d'Ivoire, Culture, Style, Mode africaine, Lieux, Portrait, Communauté, Abidjan">
+  <meta name="author" content="Kaalis Magazine">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Kaalis Mag — Redéfinir le média à l’ivoirienne">
+  <meta property="og:description"
+    content="Kaalis est un média lifestyle ivoirien centré sur la culture et la créativité africaine.">
+  <meta property="og:image" content="https://kaalismagazine.com/assets/cover.jpg">
+  <meta property="og:url" content="https://kaalismagazine.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://kaalismagazine.com/">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Les images (sans src, on laisse JS gérer) -->
+  <img class="corner tl" alt="Kaalis">
+  <img class="corner tr" alt="Kaalis">
+  <img class="corner bl" alt="Kaalis">
+  <img class="corner br" alt="Kaalis">
+
+  <main>
+    <h1>À bientôt</h1>
+  </main>
+
+  <div class="footer">© 2025 Kaalis Magazine</div>
+
+  <script>
+    // Version automatique = timestamp (change à chaque visite)
+    const v = Date.now();
+    document.querySelectorAll('img.corner').forEach(img => {
+      img.src = `./assets/inv_logo.png?v=${v}`;
+    });
+  </script>
+</body>
+
+</html>
